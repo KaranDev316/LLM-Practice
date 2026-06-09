@@ -21,28 +21,30 @@ def get_completion(prompt, model="gpt-4o-mini"):
 
     return response.choices[0].message.content
 text = f"""
-You should express what you want a model to do by \
-providing instructions that are as clear and \
-specific as you can possibly make them. \
-This will guide the model towards the desired output, \
-and reduce the chances of receiving irrelevant \
-or incorrect responses. Don't confuse writing a \
-clear prompt with writing a short prompt. \
-In many cases, longer prompts provide more clarity \
-and context for the model, which can lead to \
-more detailed and relevant outputs.
+Alfred is a BCA Student at Gu university. \
+He is 21 years old.\
+He likes watching football matches \
+He doesn't like indian food \
+
+
 """
+user_input = input("Ask anything: ")
 prompt = f"""
-Summarize the text delimited by triple backticks \
-into a sentence with 80 characters. \.
+You must answer using ONLY the information \
+inside the triple backticks. \
+If the answer cannot be found in the context, \
+say "I don't have enough information." \
+
+User Question:
+{user_input}
+
 ```{text}```
+
+Do not say "Based on the information provided". \
+
+Return a concise answer. \
+
 """
 response = get_completion(prompt)
-print(len(response))
-
-
-
-
-
 
 print(response)
