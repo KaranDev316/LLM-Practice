@@ -2,7 +2,7 @@
 from openai import OpenAI
 import os
 from dotenv import load_dotenv
-import data
+from prompt_lesson_1 import build_prompt
 load_dotenv()
 
 client = OpenAI(
@@ -23,29 +23,7 @@ def get_completion(prompt, model="gpt-4o-mini"):
 
 
 user_input = input("Ask anything: ")
-prompt = f"""
-You must answer using ONLY the information \
-inside the triple backticks. \
-
-If the answer cannot be found in the context, \
-say "I don't have enough information." \
-
-Perform the following actions : \
-1. summarize the following text in delimited.\
-2. translate the summary into french. \
-
-
-
-User Question:
-{user_input}
-
-```{data.text}```
-
-Do not say "Based on the information provided". \
-
-Return a concise answer. \
-
-"""
+prompt = build_prompt(user_input)
 response = get_completion(prompt)
 
 print(response)
