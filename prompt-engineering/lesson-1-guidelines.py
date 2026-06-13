@@ -2,7 +2,7 @@
 from openai import OpenAI
 import os
 from dotenv import load_dotenv
-from prompt_lesson_1 import build_prompt
+from lesson_2_prompt import build_prompt2
 load_dotenv()
 
 client = OpenAI(
@@ -23,7 +23,7 @@ def get_completion(prompt, model="gpt-4o-mini"):
 
 
 user_input = input("Ask anything: ")
-prompt = build_prompt(user_input)
+prompt = build_prompt2(user_input)
 response = get_completion(prompt)
 
 print(response)

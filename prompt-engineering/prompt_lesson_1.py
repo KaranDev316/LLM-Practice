@@ -5,13 +5,10 @@ def build_prompt(user_input):
     You must answer using ONLY the information \
     inside the triple backticks. \
     
-    
-    
-    Identify a list of emotions that the writer of the \
-    following review is expressing. Include no more than \
-    five items in the list. Format your answer as a list of \
-    lower-case words separated by commas.
-    
+    Identify a list of emotions that the writer of the,\
+    Return only the list no other explanation \
+    Identify the number of people who are saying positive or negative,\
+ 
     user message:
     {user_input}
    
@@ -21,8 +18,16 @@ def build_prompt(user_input):
     If the answer cannot be found in the review, \
     say "I don't have enough information." \
     
-    example:
+    example 1:
     user message: who is ronaldo?
     say "I don't have enough information."
+    
+    example 2:
+    user message: who wrote negative review?
+    say the name only no explanation \
+    
+    example 3:
+    user message: identify the number of people who are saying positive/negative \
+    say only the number like 1 or 2 no further explanation \
     
     """

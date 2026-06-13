@@ -1,11 +1,22 @@
 text = """
-Needed a nice lamp for my bedroom, and this one had \
-additional storage and not too high of a price point. \
-Got it fast. The string to our lamp broke during the \
-transit and the company happily sent over a new one. \
-Came within a few days as well. It was easy to put \
-together. I had a missing part, so I contacted their \
-support and they very quickly got me the missing piece! \
-Lumina seems to me to be a great company that cares \
-about their customers and products!!
+Top Reviews:
+
+1. Nidhi soni:
+The bobywise 1% salicylic acid body wash great product. \
+It feel so good after shower and it's easy to use and freshness.
+Quality is perfect, having a good fragrance. \
+Effective in removing tan from the very first wash, 
+leaves the skin smooth Chemical free. Loved it. \
+
+2. Himani Garg:
+Very bad product. \
+I am having intense itching after using the product.\
+I did allergy patch test which was negative. But after using on my body,
+it started itching. \
+
+3. Dheraj Sharma:
+After 2days of use it’s been gr8 using the product , \
+skin felt refreshed and hydrated but the packing was leaked \
+ when I received and the pump seem to be little damage therefore have to use manually. \
+
 """
