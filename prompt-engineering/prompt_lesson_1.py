@@ -7,12 +7,8 @@ def build_prompt(user_input):
     
     If the answer cannot be found in the context, \
     say "I don't have enough information." \
-    
-    Your task is to generate a short summary of a product \
-    review from an ecommerce site.
-    Summarize the review below, delimited by triple
-    backticks, in at most 30 words.
-    
+    Give your answer as a single word, either "positive" \
+    or "negative".
     
     user message:
     {user_input}
