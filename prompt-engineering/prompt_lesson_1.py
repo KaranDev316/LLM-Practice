@@ -5,16 +5,22 @@ def build_prompt(user_input):
     You must answer using ONLY the information \
     inside the triple backticks. \
     
-    If the answer cannot be found in the context, \
-    say "I don't have enough information." \
+    
+    
     Give your answer as a single word, either "positive" \
     or "negative".
     
     user message:
     {user_input}
-    
+   
     
     review :```{text}```
+    Check if the user's input is related to the review .\
+    If the answer cannot be found in the review, \
+    say "I don't have enough information." \
     
+    example:
+    user message: who is ronaldo?
+    say "I don't have enough information."
     
     """
